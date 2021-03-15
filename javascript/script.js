@@ -4,3 +4,7 @@ function toggleArrow(){
     toggleButton.classList.toggle('rotate-arrow');
     navLinks.classList.toggle('toggle-navlink');
 }
+window.addEventListener('scroll', function() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('sticky', window.scrollY > 0);
+})

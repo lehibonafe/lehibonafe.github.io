@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -33,8 +33,8 @@ body {
   position: fixed;
   padding: 10px;
   width: 100%;
-  -webkit-box-shadow: 0 4px 2px -2px #3F3F3F;
-          box-shadow: 0 4px 2px -2px #3F3F3F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav .logo img {
@@ -103,9 +103,7 @@ body {
 }
 
 .info-section {
-  max-width: 1110px;
   margin: auto;
-  padding: 20px;
 }
 
 .info-section h1 {
@@ -118,22 +116,31 @@ body {
   color: #FFFFFF;
 }
 
-.services, .portfolio, .contact {
+.services, .contact {
   margin-top: 400px;
 }
 
 .about {
+  background-color: #FFFFFF;
   margin-top: 280px;
+  padding: 25px;
+  height: 90vh;
 }
 
 .about .container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.about .profile {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about .container img {
+.about .profile img {
   max-width: 140px;
   border-radius: 100px;
   display: block;
@@ -141,7 +148,7 @@ body {
   margin-right: auto;
 }
 
-.about .container .imageBox {
+.about .profile .imageBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,45 +164,50 @@ body {
           flex-direction: column;
 }
 
-.about .container .title {
+.about .profile .title {
   color: #707070;
   margin-top: 10px;
 }
 
-.about .container .content {
+.about .profile .content {
   padding-left: 50px;
 }
 
-.about .container .content p {
+.about .profile .content p {
   margin-top: 10px;
   font-size: 16px;
   line-height: 30px;
+  color: #202020;
 }
 
-.about .container .content .school {
+.about .profile .content .school {
   text-decoration: none;
   color: #707070;
 }
 
-.about .container .content .cv {
+.about .profile .content .cv {
   margin-top: 30px;
 }
 
-.about .container .content .cv a {
+.about .profile .content .cv a {
   font-size: 15px;
-  color: #FFDF6C;
-  border: 1px solid #FFDF6C;
+  color: #202020;
+  border: 2px solid #FFDF6C;
   text-decoration: none;
   padding: 10px 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.about .container .content .cv a:hover {
+.about .profile .content .cv a:hover {
   background-color: #FFDF6C;
   color: #202020;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.portfolio {
+  margin-top: 100px;
 }
 
 .services .container {
@@ -209,7 +221,7 @@ body {
 }
 
 .services .container h2 {
-  color: #3F3F3F;
+  color: #707070;
 }
 
 .services .container div {
@@ -217,7 +229,7 @@ body {
 }
 
 @media (max-width: 560px) {
-  .about .container {
+  .about .profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -290,5 +302,10 @@ body {
   height: 310px !important;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+}
+
+.sticky {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*# sourceMappingURL=style.css.map */

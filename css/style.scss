@@ -8,7 +8,7 @@ $white: #FFFFFF;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 body {
     background-color: $blackish;
@@ -32,7 +32,7 @@ body {
     position: fixed;
     padding: 10px;
     width: 100%;
-    box-shadow: 0 4px 2px -2px $darkgrey;
+    transition: 0.5s;
 
     .logo img {
         width: 100px;
@@ -88,9 +88,7 @@ body {
     }
 }
 .info-section {
-    max-width: 1110px;
     margin: auto;
-    padding: 20px;
 
     h1 {
         color: $eggyellow;
@@ -102,13 +100,20 @@ body {
     }
 }
 
-.services, .portfolio, .contact {
+.services, .contact {
     margin-top: 400px;
 }
 .about {
+    background-color: $white;
     margin-top: 280px;
-    
+    padding: 25px;
+    height: 90vh;
     .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px 0;
+    }
+    .profile {
         margin-top: 25px;
         display: flex;
 
@@ -139,6 +144,7 @@ body {
                 margin-top: 10px;
                 font-size: 16px;
                 line-height: 30px;
+                color: $blackish;
             }
             .school {
                 text-decoration: none;
@@ -149,8 +155,8 @@ body {
             }
             .cv a {
                 font-size: 15px;
-                color: $eggyellow;
-                border: 1px solid $eggyellow;
+                color: $blackish;
+                border: 2px solid $eggyellow;
                 text-decoration: none;
                 padding: 10px 30px;
                 transition: 0.3s;
@@ -163,13 +169,16 @@ body {
         }
     }
 }
+.portfolio {
+    margin-top: 100px;
+}
 .services {
     .container {
         margin-top: 20px;
         display: flex;
         justify-content: space-evenly;
         h2 {
-            color: $darkgrey;
+            color: $mediumgrey
         }
         div {
             margin: 30px;
@@ -180,7 +189,7 @@ body {
 
 @media (max-width: 560px){
     .about {
-        .container {
+        .profile {
             flex-direction: column;
         }
         img {
@@ -239,4 +248,7 @@ body {
 .toggle-navlink {
     height: 310px !important;
     transition: 0.3s all ease-in-out;
+}
+.sticky {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
