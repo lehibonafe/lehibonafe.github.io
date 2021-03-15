@@ -165,35 +165,19 @@ body {
 }
 .services {
     .container {
+        margin-top: 20px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 30px;
-        text-align: center;
+        justify-content: space-evenly;
         h2 {
-            i {
-                color: $eggyellow;
-                font-size: 50px;
-                text-align: center;
-                margin-right: 12px;
-            }
-            color: $blackish;
-            letter-spacing: 0;
-            color: $white;
+            color: $darkgrey;
         }
         div {
-            padding: 10px;
-            margin: 5px;
-            width: 600px;
-            height: 120px;
-            
+            margin: 30px;
         }
-        div:hover {
-            border: 1px solid $eggyellow;
-            
-        }
+
     }
 }
+
 @media (max-width: 560px){
     .about {
         .container {
