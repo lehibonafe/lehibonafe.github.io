@@ -98,18 +98,28 @@ body {
     p {
         color: $white;
     }
+    .top-wave {
+        display: block;
+        margin-top: 120px;   
+    }
+    .bottom-wave {
+        transform: rotate(180deg);
+    }
+    
 }
 
 .services, .contact {
     margin-top: 400px;
 }
+
+
 .about {
     background-color: $white;
-    margin-top: 280px;
     padding: 25px;
-    height: 90vh;
+    height: 80vh;
+    overflow: hidden;
     .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
         padding: 30px 0;
     }
@@ -118,7 +128,7 @@ body {
         display: flex;
 
         img {
-            max-width: 140px;
+            max-width: 150px;
             border-radius: 100px;
             display: block;
             margin-left: auto;
@@ -169,9 +179,7 @@ body {
         }
     }
 }
-.portfolio {
-    margin-top: 100px;
-}
+
 .services {
     .container {
         margin-top: 20px;
@@ -189,6 +197,7 @@ body {
 
 @media (max-width: 560px){
     .about {
+        height: 100vh;
         .profile {
             flex-direction: column;
         }

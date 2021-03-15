@@ -116,19 +116,29 @@ body {
   color: #FFFFFF;
 }
 
+.info-section .top-wave {
+  display: block;
+  margin-top: 120px;
+}
+
+.info-section .bottom-wave {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .services, .contact {
   margin-top: 400px;
 }
 
 .about {
   background-color: #FFFFFF;
-  margin-top: 280px;
   padding: 25px;
-  height: 90vh;
+  height: 80vh;
+  overflow: hidden;
 }
 
 .about .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   padding: 30px 0;
 }
@@ -141,7 +151,7 @@ body {
 }
 
 .about .profile img {
-  max-width: 140px;
+  max-width: 150px;
   border-radius: 100px;
   display: block;
   margin-left: auto;
@@ -206,10 +216,6 @@ body {
   transition: 0.3s;
 }
 
-.portfolio {
-  margin-top: 100px;
-}
-
 .services .container {
   margin-top: 20px;
   display: -webkit-box;
@@ -229,6 +235,9 @@ body {
 }
 
 @media (max-width: 560px) {
+  .about {
+    height: 100vh;
+  }
   .about .profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
