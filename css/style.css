@@ -73,7 +73,7 @@ body {
 }
 
 .homepage h2 {
-  margin-top: 180px;
+  margin-top: 140px;
   color: #3F3F3F;
   font-size: 30px;
 }
@@ -118,7 +118,7 @@ body {
 
 .info-section .top-wave {
   display: block;
-  margin-top: 120px;
+  margin-top: 20px;
 }
 
 .info-section .bottom-wave {
@@ -226,7 +226,7 @@ body {
           justify-content: space-evenly;
 }
 
-.services .container h2 {
+.services .container h1 {
   color: #707070;
 }
 
@@ -234,7 +234,95 @@ body {
   margin: 30px;
 }
 
+.contact .container {
+  max-width: 1100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .container .info div {
+  margin: 30px;
+}
+
+.contact .container .info span {
+  font-size: 20px;
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+
+.contact .container .fas {
+  color: #FFDF6C;
+  font-size: 40px;
+}
+
+.contact .container .form {
+  padding: 0 10px 0 50px;
+  margin-top: 25px;
+}
+
+.contact .container .form form {
+  max-width: 500px;
+  display: block;
+}
+
+.contact .container .form .contact-text {
+  margin: 8px 0;
+  width: 100%;
+  border: 0;
+  background-color: #3F3F3F;
+  padding: 10px 20px;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.contact .container .form .contact-text:focus {
+  -webkit-box-shadow: 0 0 5px #ffdf6c;
+          box-shadow: 0 0 5px #ffdf6c;
+  border: 1px solid #ffdf6c;
+}
+
+.contact .container .form .send-btn {
+  border: 0;
+  padding: 10px 30px;
+  color: #202020;
+  outline: none;
+  float: right;
+  border: 1px solid #FFDF6C;
+  background: #202020;
+  color: #FFDF6C;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  height: 100px;
+}
+
+.footer .fab {
+  font-size: 25px;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+.footer .fab:hover {
+  color: #FFDF6C;
+}
+
+.footer .name {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
 @media (max-width: 560px) {
+  .homepage h2 {
+    margin-top: 250px;
+  }
+  .info-section .top-wave {
+    margin-top: 150px;
+  }
   .about {
     height: 100vh;
   }
@@ -297,6 +385,18 @@ body {
   .nav li {
     text-align: center;
     margin: 8px;
+  }
+}
+
+@media (max-width: 925px) {
+  .contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .container .form {
+    padding: 0 10px 0 30px;
   }
 }
 
